@@ -48,7 +48,11 @@ export default function DownloadPage() {
   const openExternal = (url) => window.open(url, "_blank");
 
   return (
+<<<<<<< HEAD
     <section className="relative max-w-6xl mx-auto px-6 py-20">
+=======
+    <section className="relative max-w-4xl mx-auto px-6 py-20">
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
       <div
         className="absolute inset-0 -z-10"
         style={{
@@ -63,6 +67,7 @@ export default function DownloadPage() {
         alt=""
       />
 
+<<<<<<< HEAD
       {/* Updated Header Section */}
       <header className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">
@@ -91,11 +96,24 @@ export default function DownloadPage() {
             <span className="text-sm font-medium text-gray-700">100% Secure</span>
           </div>
         </div>
+=======
+      <header className="text-center mb-10">
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
+          Download App
+        </h1>
+        <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+          Choose your platform to install our app and manage surveys anywhere.
+        </p>
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
       </header>
 
       <div className="grid gap-8 md:grid-cols-3">
         {/* APK DOWNLOAD */}
+<<<<<<< HEAD
         <div className="bg-white p-6 rounded-2xl shadow-lg hover:-translate-y-1 transition border border-gray-100">
+=======
+        <div className="bg-white p-6 rounded-2xl shadow-lg hover:-translate-y-1 transition">
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
           <div className="flex items-center gap-3">
             {/* APK ICON */}
             <div className="w-14 h-14 rounded-xl bg-yellow-400 flex items-center justify-center shadow text-white">
@@ -117,8 +135,13 @@ export default function DownloadPage() {
             disabled={downloading}
             className={`w-full mt-6 px-4 py-3 rounded-lg text-white shadow-md flex items-center justify-center gap-3 transition ${
               downloading
+<<<<<<< HEAD
                 ? "bg-blue-500 cursor-wait"
                 : "bg-gradient-to-r from-blue-600 to-purple-600 hover:scale-105"
+=======
+                ? "bg-indigo-500 cursor-wait"
+                : "bg-gradient-to-r from-indigo-600 to-cyan-500 hover:scale-105"
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
             }`}
           >
             {downloading ? (
@@ -160,7 +183,11 @@ export default function DownloadPage() {
           {/* progress bar */}
           <div className="mt-4 h-2 bg-gray-100 rounded-full overflow-hidden">
             <div
+<<<<<<< HEAD
               className="h-full bg-gradient-to-r from-blue-600 to-purple-600 transition-all"
+=======
+              className="h-full bg-indigo-600 transition-all"
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
               style={{ width: `${progress}%` }}
             ></div>
           </div>
@@ -170,12 +197,20 @@ export default function DownloadPage() {
               ? "Download started — check your downloads folder."
               : downloading
               ? `${progress}% completed`
+<<<<<<< HEAD
               : ""}
+=======
+              : "APK file size ~XX MB"}
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
           </div>
         </div>
 
         {/* ANDROID PLAY STORE */}
+<<<<<<< HEAD
         <div className="bg-white p-6 rounded-2xl shadow-lg hover:-translate-y-1 transition border border-gray-100">
+=======
+        <div className="bg-white p-6 rounded-2xl shadow-lg hover:-translate-y-1 transition">
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
           <div className="flex items-center gap-3">
             {/* Android Icon */}
             <div className="w-14 h-14 rounded-xl bg-green-600 flex items-center justify-center shadow">
@@ -198,14 +233,22 @@ export default function DownloadPage() {
 
           <button
             onClick={() => openExternal(PLAY_STORE_URL)}
+<<<<<<< HEAD
             className="mt-6 w-full px-4 py-3 rounded-lg bg-white border border-gray-200 hover:shadow flex items-center justify-center gap-3 hover:bg-green-50 transition-colors"
+=======
+            className="mt-6 w-full px-4 py-3 rounded-lg bg-white border border-gray-200 hover:shadow flex items-center justify-center gap-3"
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
           >
             <span className="text-green-600 font-medium">Open Play Store</span>
           </button>
         </div>
 
         {/* IOS APP STORE */}
+<<<<<<< HEAD
         <div className="bg-white p-6 rounded-2xl shadow-lg hover:-translate-y-1 transition border border-gray-100">
+=======
+        <div className="bg-white p-6 rounded-2xl shadow-lg hover:-translate-y-1 transition">
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
           <div className="flex items-center gap-3">
             {/* Apple Icon */}
             <div className="w-14 h-14 rounded-xl bg-black flex items-center justify-center shadow">
@@ -229,13 +272,18 @@ export default function DownloadPage() {
 
           <button
             onClick={() => openExternal(APP_STORE_URL)}
+<<<<<<< HEAD
             className="mt-6 w-full px-4 py-3 rounded-lg bg-white border border-gray-200 hover:shadow flex items-center justify-center gap-3 hover:bg-gray-50 transition-colors"
+=======
+            className="mt-6 w-full px-4 py-3 rounded-lg bg-white border border-gray-200 hover:shadow flex items-center justify-center gap-3"
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
           >
             <span className="text-gray-900 font-medium">Open App Store</span>
           </button>
         </div>
       </div>
 
+<<<<<<< HEAD
       {/* Additional Info Section */}
       {/* <div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 text-center">
         <h3 className="text-xl font-bold text-gray-900 mb-4">Why Choose Query Survey App?</h3>
@@ -255,6 +303,8 @@ export default function DownloadPage() {
         </div>
       </div> */}
 
+=======
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
       {done && (
         <div className="mt-8 text-center text-green-600 font-medium">
           APK download started — check your downloads.
@@ -262,4 +312,8 @@ export default function DownloadPage() {
       )}
     </section>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4d3244c808fda784329f90ffca0a8abee16d00fc
